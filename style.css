@@ -7,58 +7,79 @@ body {
 }
 .container {
     width: 1366px;
-    height: 800px;
-    background-image: url(img/slider1.jpg);
     margin: 0 auto;
-      
-    /* padding-left: 10px;
-    padding-right: 10px; */
 }
-.logo {
-    height: 22px;
-    width: 185px;
-    margin-top: 63px;
-    margin-left: 98px;
+.home-slider {
+    position: relative;
+    background-image: url(img/slider1.jpg);
+    height: 800px;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.header {
+    padding-top: 63px;
+}
+.padding-site {
+    padding-left: 98px;
+    padding-right: 98px;
 }
 .menu {
-color: #8c8c8c;
-font-size: 14px;
-font-weight: 300;
-line-height: 48px;
-text-transform: uppercase;
-display: inline;
-text-decoration: none;
+    float: right;
 }
 .menu-list {
     list-style-type: none;
+    float: left;
 }
-.menu-list:hover {
+.slider-text {
+    margin-top: 283px;
+}
+.pagination {
+    position: absolute;
+    width: 1170px;
+    bottom: 14px;
+    text-align: center;
+}
+.list-link:hover {
     color: #212121;
-    font-weight: 700;
-    letter-spacing: 1.4px;
+}
+.list-link {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 13px;
 }
 .list-link-active {
     color: #212121;
     font-weight: 700;
     letter-spacing: 1.4px;
     border-bottom: 3px solid black;
-
+}
+.slider-content {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    width: 458px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .trend {
     color: #43a047;
     font-size: 18px;
     font-weight: 700;
-    line-height: 48px;
     text-transform: uppercase;
-    margin: 373px 1159px 414px 98px;
 }
-.fish {
+.slider-text2 {
     color: #212121;
     font-size: 62px;
     font-weight: 400;
     line-height: 72px;
     text-transform: uppercase;
-    margin: 408px 825px 349px 106px;
 }
 .button {
     color: #212121;
@@ -76,16 +97,25 @@ text-decoration: none;
     border-radius: 23px;
     background-color: #ffffff;
 }
+.button:hover {
+    box-shadow: 0 4px 8px 2px rgba(33, 33, 33, 0.35);
+    transition:0.5s;
+    transform: scale(1.01);
+}
 .circle {
     width: 30px;
     height: 30px;
     background-color: #c7c7c7;
     display: inline-block;
     border-radius: 50%;
+    margin: 5px;
+}
+.circle:hover {
+    background-color: #212121;
 }
 .circle-active {
     width: 40px;
     height: 40px;
     background-color: black;
-
+    margin-bottom: 0px;
 }
