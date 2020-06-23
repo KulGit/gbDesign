@@ -119,3 +119,26 @@ body {
     background-color: black;
     margin-bottom: 0px;
 }
+.featured-products {
+    background-color: grey;
+    float: right;
+    height: 610px;
+}
+.Fitems {
+    float: right;
+}
+.headF {
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+}
+.head-featured {
+    /* float: right; */
+    /* display: inline-block; */
+}
+.featured-header {
+    display: inline-block;
+    float: right;
+}
+
+ 
