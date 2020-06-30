@@ -151,6 +151,7 @@ body {
   letter-spacing: 3.6px;
   float: right;
   text-decoration: none;
+  margin-top: 10px;
 }
 .featured-header {
   padding-bottom: 50px;
@@ -600,6 +601,7 @@ body {
 .body-detail {
   margin-top: 70px;
   display: inline-block;
+  width: 1170px;
 }
 .body-detail .slider-detail {
   display: inline-block;
@@ -662,7 +664,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 4.4px;
   margin-bottom: 50px;
-  margin-left: 50px;
+  margin-left: 30px;
+  position: relative;
+}
+.body-detail .info-detail .button-detail .img-kursor {
+  position: absolute;
+  top: 24px;
+  right: 105px;
 }
 .body-detail .info-detail .button-detail:hover {
   box-shadow: 0 4px 8px 2px rgba(33, 33, 33, 0.35);
@@ -677,6 +685,7 @@ body {
   line-height: 24.01px;
   letter-spacing: 0.4px;
   display: inline-block;
+  width: 450px;
 }
 .body-detail .detail-choice {
   margin-left: 200px;
@@ -709,4 +718,14 @@ body {
 }
 .container-product .category-product-avtive {
   color: #212121;
+}
+.container-product .range {
+  width: 575px;
+  height: 58px;
+  color: #212121;
+  font-family: "Montserrat - Thin";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 72px;
+  margin-top: ;
 }
