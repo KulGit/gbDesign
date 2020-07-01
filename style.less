@@ -108,6 +108,7 @@ body {
     transition:0.5s;
     transform: scale(1.01);
 }
+
 .circle {
     width: 30px;
     height: 30px;
@@ -160,7 +161,38 @@ body {
 .Fitems {
     list-style: none;
     float: right;
+    .FitemsLinks {
+        display: inline-block;
+        height: 270px;
+        position: relative;
+        span {
+            position: absolute;
+            top:100px;
+            left:115px;
+            visibility: hidden;
+        }
+    }
+
 }
+.Fitems:nth-child(1):hover span,
+.Fitems:nth-child(2):hover span,
+.Fitems:nth-child(3):hover span,
+.Fitems:nth-child(4):hover span {
+    visibility: visible;
+}
+.Fitems:nth-child(1):hover img,
+.Fitems:nth-child(2):hover img,
+.Fitems:nth-child(3):hover img,
+.Fitems:nth-child(4):hover img {
+    opacity: 25%;
+}
+.hover-text {
+    color: #212121;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 29.88px;
+}
+
 .featured-items {
     display: flex;
     justify-content: space-between;
@@ -640,6 +672,8 @@ body {
             letter-spacing: 1.8px;
             display: inline-block;
             text-align: center;
+            margin-top: 23px;
+            margin-bottom: 36px;
         }
         .price-detail {
             width: 450px;
@@ -671,6 +705,7 @@ body {
                 margin-bottom: 50px;
                 margin-left: 30px;
                 position: relative;
+                margin-top: 30px;
                 .img-kursor {
                     position: absolute;
                     top: 24px;
@@ -694,12 +729,13 @@ body {
         }
     }
     .detail-choice {
-        margin-left: 200px;
+        margin-left: 170px;
         .detail-menu {
             float: left;
             .detail-list {
                 list-style-type: none;
                 float: left;
+                margin-right: 15px;
 
             }
             
@@ -716,13 +752,14 @@ body {
     }
     .category-product {
         width: 647px;
-        height: 13px;
+        height: 80px;
         color: #6c6c6c;
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1.8px;
+        margin-top: 30px;
     }
     .category-product-avtive {
         color:#212121
@@ -735,9 +772,16 @@ body {
         font-size: 62px;
         font-weight: 400;
         line-height: 72px;
-        margin-top: ;
+        margin-top: 230px;
 
     }
+    .refresh {
+        margin-top: 70px;
+        margin-bottom: 140px;
+    }
+}
+.T-item-Link:hover {
+    opacity: 15%;
 }
 
 
